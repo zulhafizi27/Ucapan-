@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05070c">
+  <title>Nierabasma — Happy Graduation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <h1><span>Nierabasma</span></h1>
+    </header>
+
+    <section class="stage" aria-label="ASCII bloom animation">
+      <canvas id="art" width="960" height="760"></canvas>
+    </section>
+
+    <div class="controls">
+      <button id="toggle" type="button">Pause</button>
+      <input id="timeline" type="range" min="0" max="10" step="0.01" value="0" aria-label="Animation timeline">
+      <div class="time"><span id="elapsed">0.0</span>s / 10.0s</div>
+    </div>
+    <div class="settings" aria-label="Animation settings">
+      <button id="color-button" type="button" aria-label="Change flower color">Flower color: Rose</button>
+      <button id="speed-button" type="button" aria-label="Change playback speed">Speed: 1x</button>
+    </div>
+    <section class="message" aria-labelledby="graduation-title">
+      <h2 id="graduation-title">Happy Graduation! 🎓✨</h2>
+      <p>I watched you balance the weight of the world, late nights, and endless sacrifices to get this Master’s degree. You never gave up, and today, you are standing tall with your well-earned dream. I could not be prouder of the person you are and the height you’ve reached.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
